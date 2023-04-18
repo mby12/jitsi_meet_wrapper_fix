@@ -1,8 +1,8 @@
 name: jitsi_meet_wrapper
 description: A Flutter wrapper around the official JitsiMeetSDKs. With this package, you can launch Jitsi meetings in a native view.
 version: 0.0.6
-homepage: https://github.com/saibotma/jitsi_meet_wrapper/tree/main/jitsi_meet_wrapper
-repository: https://github.com/saibotma/jitsi_meet_wrapper/tree/main/jitsi_meet_wrapper
+homepage: https://github.com/mby12/jitsi_meet_wrapper_fix/tree/main/jitsi_meet_wrapper
+repository: https://github.com/mby12/jitsi_meet_wrapper_fix/tree/main/jitsi_meet_wrapper
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
