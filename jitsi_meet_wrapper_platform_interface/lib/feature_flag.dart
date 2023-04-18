@@ -159,5 +159,5 @@ enum FeatureFlag {
   
   /// Flag indicating if the Pre Join page should be enabled.
   /// Default: disabled (false).
-  preJoinPageEnabled,
+  isPreJoinPageEnabled,
 }
