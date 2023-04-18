@@ -236,6 +236,8 @@ class MethodChannelJitsiMeetWrapper extends JitsiMeetWrapperPlatformInterface {
         return 'video-mute.enabled';
       case FeatureFlag.isVideoShareButtonEnabled:
         return 'video-share.enabled';
+	  case FeatureFlag.preJoinPageEnabled:
+        return 'prejoinpage.enabled';
     }
   }
 }
