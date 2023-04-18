@@ -1,8 +1,7 @@
 name: jitsi_meet_wrapper_platform_interface
 description: Platform interface for jitsi_meet_wrapper
 version: 0.0.5
-homepage: https://github.com/mby12/jitsi_meet_wrapper_fix/tree/main/jitsi_meet_wrapper_platform_interface
-repository: https://github.com/mby12/jitsi_meet_wrapper_fix/tree/main/jitsi_meet_wrapper_platform_interface
+publish_to: 'none'
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
