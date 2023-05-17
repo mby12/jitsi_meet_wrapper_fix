@@ -14,14 +14,9 @@ buildscript {
     }
 }
 
-println "current project path: $projectDir"
 def mavenUrl = "file:$projectDir/sdk"
-println "apa ini: $mavenUrl"
-def parentDirPath = parent.projectDir
-println "parent project path: $parentDirPath"
-def rootDirPath = rootProject.projectDir
-println "root project path: $rootDirPath"
-println "root project path: $rootDir" // this will be same as above.
+println "custom sdk path: $projectDir"
+
 rootProject.allprojects {
     repositories {
         google()
