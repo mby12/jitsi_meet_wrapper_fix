@@ -14,15 +14,26 @@ buildscript {
     }
 }
 
+println "current project path: $projectDir"
+def mavenUrl = "file:$projectDir/sdk"
+println "apa ini: $mavenUrl"
+def parentDirPath = parent.projectDir
+println "parent project path: $parentDirPath"
+def rootDirPath = rootProject.projectDir
+println "root project path: $rootDirPath"
+println "root project path: $rootDir" // this will be same as above.
 rootProject.allprojects {
     repositories {
         google()
         mavenCentral()
         jcenter()
         // Required by jitsi
-        maven {
-            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
-        }
+        // maven {
+        //     url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
+        // }
+        // maven { url "file:/Users/macintosh/Documents/GitHub/jitsi_meet_wrapper_fix/jitsi_meet_wrapper/android/sdk" }
+        // maven { url "file:/Users/macintosh/Documents/GitHub/jitsi_meet_wrapper_fix/jitsi_meet_wrapper/android/sdk" }
+        maven { url mavenUrl }
         // Required, otherwise a dependency of jisti sdk will not be found.
         maven { url 'https://www.jitpack.io' }
     }
@@ -57,5 +68,6 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     // From: https://github.com/jitsi/jitsi-maven-repository/tree/master/releases/org/jitsi/react/jitsi-meet-sdk
-    implementation ('org.jitsi.react:jitsi-meet-sdk:7.0.1') { transitive = true }
+    // implementation ('org.jitsi.react:jitsi-meet-sdk:7.0.1') { transitive = true }
+    implementation ('org.jitsi.react:jitsi-meet-sdk:+') { transitive = true }
 }

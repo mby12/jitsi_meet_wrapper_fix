@@ -1,0 +1,9 @@
+platform :ios, '12.0'
+
+workspace 'JitsiMeetSDKTest.xcworkspace'
+
+target 'JitsiMeetSDKTest' do
+  project 'JitsiMeetSDKTest.xcodeproj'
+
+  pod 'JitsiMeetSDK'
+end
