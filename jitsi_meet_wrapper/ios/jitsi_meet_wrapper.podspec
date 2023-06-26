@@ -2,6 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
 # Run `pod lib lint jitsi_meet_wrapper.podspec` to validate before publishing.
 #
+
 Pod::Spec.new do |s|
   s.name             = 'jitsi_meet_wrapper'
   s.version          = '0.0.1'
@@ -13,9 +14,11 @@ A new Flutter project.
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Your Company' => 'email@example.com' }
   s.source           = { :path => '.' }
+  # s.source       = { :git => "https://github.com/myrepo/Podspecs.git", :tag => s.version }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
-  s.dependency 'JitsiMeetSDK', '7.0.1'
+  s.dependency 'InternalJitsiMeetSDK', '2.0.2'
+  # s.dependency 'JitsiMeetSDK', '7.0.1'
   s.platform = :ios, '8.0'
 
   # Flutter.framework does not contain a i386 slice.
